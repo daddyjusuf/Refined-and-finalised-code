@@ -1,0 +1,17 @@
+while True:
+    while True:
+        n = input("Enter n (integer): ")
+        try:                                      #All non-integers (floats,ascii chars) would proceed to line 7 
+            n = int(n)
+        except ValueError:
+            print("That's not an int!"
+                  "Integer input expected.")
+            break
+        for i in range(1,n):                     #Simple calculation of factorial [n*(n-1)*(n-2)*...2*1]
+            n = n*i
+        print('The factorial of n is ',n,'.00.')      #Append ".00" in print()
+    m = str(input("Do you want to continue?(C)"))     #You can choose to continue or not
+    if ord(m) == 67:
+        pass
+    else:
+        break
